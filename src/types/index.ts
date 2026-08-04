@@ -50,6 +50,7 @@ export interface Match {
   goals: number;
   assists: number;
   match_mvp: boolean;
+  date: string;
 }
 
 export interface FormattedMatch extends Match {

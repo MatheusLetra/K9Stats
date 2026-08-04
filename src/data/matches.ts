@@ -74,77 +74,77 @@ const teams: Team[] = [
   {
     id: 15,
     name: 'Mexico KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1041324/image',
   },
   {
     id: 16,
     name: 'Italy KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1041330/image',
   },
   {
     id: 17,
     name: 'Brazil KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1041338/image',
   },
   {
     id: 18,
     name: 'FC Real Elite',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1077929/image',
   },
   {
     id: 19,
     name: 'Spain KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1041323/image',
   },
   {
     id: 20,
     name: 'Qatar KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1157531/image',
   },
   {
     id: 21,
     name: 'Peru KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1041331/image',
   },
   {
     id: 22,
     name: 'Saudi Arabia KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1041326/image',
   },
   {
     id: 23,
     name: 'Colombia KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1041328/image',
   },
   {
     id: 24,
     name: 'Türkiye KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1041332/image',
   },
   {
     id: 25,
     name: 'Germany KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1041336/image',
   },
   {
     id: 26,
     name: 'South Korea KWC',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/1041335/image',
   },
   {
     id: 27,
     name: 'Rayo de Barcelona',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/461105/image',
   },
   {
     id: 28,
     name: 'Porcinos',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/461104/image',
   },
   {
     id: 29,
     name: 'Saiyans',
-    logo: 'https://img.sofascore.com/api/v1/team/518333/image',
+    logo: 'https://img.sofascore.com/api/v1/team/461106/image',
   },
   {
     id: 30,
@@ -162,138 +162,155 @@ const matches: Match[] = [
   {
     id: 54,
     rival_id: 2, // Alpak FC
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 5,
     assists: 0,
     match_mvp: false,
+    date: '2026-08-01',
   },
   {
     id: 53,
     rival_id: 3, // Ultimate Móstoles
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 5,
     assists: 0,
     match_mvp: false,
+    date: '2026-08-01',
   },
   {
     id: 52,
     rival_id: 4, // DesimpaiN
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 2,
     assists: 0,
     match_mvp: false,
+    date: '2026-07-31',
   },
   {
     id: 51,
     rival_id: 2, // Alpak FC
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 2,
     assists: 0,
     match_mvp: false,
+    date: '2026-07-28',
   },
   {
     id: 50,
     rival_id: 5, // Karasu
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 2,
     assists: 0,
     match_mvp: false,
+    date: '2026-07-27',
   },
   {
     id: 49,
     rival_id: 4, // DesimpaiN
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 2,
     assists: 0,
     match_mvp: false,
+    date: '2026-05-18',
   },
   {
     id: 48,
     rival_id: 6, // Fluxo
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 1,
     assists: 0,
     match_mvp: false,
+    date: '2026-05-15',
   },
   {
     id: 47,
     rival_id: 7, // Capim FC
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 4,
     assists: 0,
     match_mvp: false,
+    date: '2026-05-11',
   },
   {
     id: 46,
     rival_id: 6, // Fluxo
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 4,
     assists: 0,
     match_mvp: false,
+    date: '2026-05-04',
   },
   {
     id: 45,
     rival_id: 8, // Dendele FC
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 1,
     assists: 0,
     match_mvp: false,
+    date: '2026-04-27',
   },
   {
     id: 44,
     rival_id: 9, // Nyvelados FC
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 2,
     assists: 0,
     match_mvp: false,
+    date: '2026-04-20',
   },
   {
     id: 43,
     rival_id: 4, // DesimpaiN
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 1,
     assists: 0,
     match_mvp: false,
+    date: '2026-04-13',
   },
   {
     id: 42,
     rival_id: 10, // Loud SC
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 2,
     assists: 0,
     match_mvp: false,
+    date: '2026-04-06',
   },
   {
     id: 41,
     rival_id: 11, // Furia FC
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 5,
     assists: 0,
     match_mvp: false,
+    date: '2026-03-30',
   },
   {
     id: 40,
     rival_id: 12, // Dibrados FC
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 6,
     assists: 0,
     match_mvp: false,
+    date: '2026-03-23',
   },
   {
     id: 39,
     rival_id: 13, // Funkbol Clube
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 2,
     assists: 0,
     match_mvp: false,
+    date: '2026-03-16',
   },
   {
     id: 38,
     rival_id: 7, // Capim FC
-    self_team: 1,
+    self_team: 1, // G3X
     goals: 6,
     assists: 0,
     match_mvp: false,
+    date: '2026-03-09',
   },
   {
     id: 37,
@@ -302,6 +319,7 @@ const matches: Match[] = [
     goals: 1,
     assists: 0,
     match_mvp: false,
+    date: '2026-01-17',
   },
   {
     id: 36,
@@ -310,6 +328,7 @@ const matches: Match[] = [
     goals: 0,
     assists: 0,
     match_mvp: false,
+    date: '2026-01-15',
   },
   {
     id: 35,
@@ -318,166 +337,187 @@ const matches: Match[] = [
     goals: 3,
     assists: 0,
     match_mvp: false,
+    date: '2026-01-13',
   },
   {
     id: 34,
-    rival_id: 7, // Capim FC
-    self_team: 1, // G3X
-    goals: 1,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 33,
-    rival_id: 13, // Funkbol Clube
-    self_team: 1, // G3X
-    goals: 1,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 32,
-    rival_id: 11, // Furia FC
-    self_team: 1, // G3X
-    goals: 1,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 31,
-    rival_id: 8, // Dendele FC
-    self_team: 1, // G3X
-    goals: 4,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 30,
-    rival_id: 10, // Loud SC
-    self_team: 1, // G3X
-    goals: 2,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 29,
-    rival_id: 6, // Fluxo
-    self_team: 1, // G3X
-    goals: 3,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 28,
-    rival_id: 9, // Nyvelados FC
-    self_team: 1, // G3X
-    goals: 3,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 27,
-    rival_id: 8, // Dendele FC
-    self_team: 1, // G3X
-    goals: 1,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 26,
-    rival_id: 7, // Capim FC
-    self_team: 1, // G3X
-    goals: 2,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 25,
-    rival_id: 10, // Loud SC
-    self_team: 1, // G3X
-    goals: 1,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 24,
-    rival_id: 18, // FC Real Elite
-    self_team: 1, // G3X
-    goals: 4,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 23,
-    rival_id: 4, // DesimpaiN
-    self_team: 1, // G3X
-    goals: 4,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 22,
-    rival_id: 11, // Furia FC
-    self_team: 1, // G3X
-    goals: 3,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 21,
-    rival_id: 8, // Dendele FC
-    self_team: 1, // G3X
-    goals: 3,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 20,
-    rival_id: 13, // Funkbol Clube
-    self_team: 1, // G3X
-    goals: 2,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 19,
-    rival_id: 11, // Furia FC
-    self_team: 1, // G3X
-    goals: 2,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 18,
-    rival_id: 19, // Spain KWC
-    self_team: 17, // Brazil KWC
-    goals: 3,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 17,
-    rival_id: 20, // Qatar KWC
-    self_team: 17, // Brazil KWC
-    goals: 3,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 16,
-    rival_id: 21, // Peru KWC
-    self_team: 17, // Brazil KWC
-    goals: 1,
-    assists: 0,
-    match_mvp: false,
-  },
-  {
-    id: 15,
     rival_id: 22, // Saudi Arabia KWC
     self_team: 17, // Brazil KWC
     goals: 1,
     assists: 0,
     match_mvp: false,
+    date: '2026-01-12',
+  },
+  {
+    id: 33,
+    rival_id: 21, // Peru KWC
+    self_team: 17, // Brazil KWC
+    goals: 1,
+    assists: 0,
+    match_mvp: false,
+    date: '2026-01-11',
+  },
+  {
+    id: 32,
+    rival_id: 20, // Qatar KWC
+    self_team: 17, // Brazil KWC
+    goals: 3,
+    assists: 0,
+    match_mvp: false,
+    date: '2026-01-08',
+  },
+  {
+    id: 31,
+    rival_id: 19, // Spain KWC
+    self_team: 17, // Brazil KWC
+    goals: 3,
+    assists: 0,
+    match_mvp: false,
+    date: '2026-01-03',
+  },
+  {
+    id: 30,
+    rival_id: 11, // Furia FC
+    self_team: 1, // G3X
+    goals: 2,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-11-14',
+  },
+  {
+    id: 29,
+    rival_id: 13, // Funkbol Clube
+    self_team: 1, // G3X
+    goals: 2,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-11-14',
+  },
+  {
+    id: 28,
+    rival_id: 8, // Dendele FC
+    self_team: 1, // G3X
+    goals: 3,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-11-10',
+  },
+  {
+    id: 27,
+    rival_id: 11, // Furia FC
+    self_team: 1, // G3X
+    goals: 3,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-11-03',
+  },
+  {
+    id: 26,
+    rival_id: 4, // DesimpaiN
+    self_team: 1, // G3X
+    goals: 4,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-10-27',
+  },
+  {
+    id: 25,
+    rival_id: 18, // FC Real Elite
+    self_team: 1, // G3X
+    goals: 4,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-10-24',
+  },
+  {
+    id: 24,
+    rival_id: 10, // Loud SC
+    self_team: 1, // G3X
+    goals: 1,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-10-20',
+  },
+  {
+    id: 23,
+    rival_id: 7, // Capim FC
+    self_team: 1, // G3X
+    goals: 2,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-10-17',
+  },
+  {
+    id: 22,
+    rival_id: 8, // Dendele FC
+    self_team: 1, // G3X
+    goals: 1,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-05-09',
+  },
+  {
+    id: 21,
+    rival_id: 9, // Nyvelados FC
+    self_team: 1, // G3X
+    goals: 3,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-05-05',
+  },
+  {
+    id: 20,
+    rival_id: 6, // Fluxo
+    self_team: 1, // G3X
+    goals: 3,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-05-03',
+  },
+  {
+    id: 19,
+    rival_id: 10, // Loud SC
+    self_team: 1, // G3X
+    goals: 2,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-04-28',
+  },
+  {
+    id: 18,
+    rival_id: 8, // Dendele FC
+    self_team: 1, // G3X
+    goals: 4,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-04-26',
+  },
+  {
+    id: 17,
+    rival_id: 11, // Furia FC
+    self_team: 1, // G3X
+    goals: 1,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-04-21',
+  },
+  {
+    id: 16,
+    rival_id: 13, // Funkbol Clube
+    self_team: 1, // G3X
+    goals: 1,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-04-07',
+  },
+  {
+    id: 15,
+    rival_id: 7, // Capim FC
+    self_team: 1, // G3X
+    goals: 1,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-03-31',
   },
   {
     id: 14,
@@ -486,6 +526,7 @@ const matches: Match[] = [
     goals: 1,
     assists: 0,
     match_mvp: false,
+    date: '2025-03-29',
   },
   {
     id: 13,
@@ -494,6 +535,7 @@ const matches: Match[] = [
     goals: 6,
     assists: 0,
     match_mvp: false,
+    date: '2025-01-12',
   },
   {
     id: 12,
@@ -502,6 +544,7 @@ const matches: Match[] = [
     goals: 3,
     assists: 0,
     match_mvp: false,
+    date: '2025-01-10',
   },
   {
     id: 11,
@@ -510,6 +553,7 @@ const matches: Match[] = [
     goals: 7,
     assists: 0,
     match_mvp: false,
+    date: '2025-01-09',
   },
   {
     id: 10,
@@ -518,6 +562,7 @@ const matches: Match[] = [
     goals: 4,
     assists: 0,
     match_mvp: false,
+    date: '2025-01-04',
   },
   {
     id: 9,
@@ -526,6 +571,7 @@ const matches: Match[] = [
     goals: 4,
     assists: 0,
     match_mvp: false,
+    date: '2025-01-02',
   },
   {
     id: 8,
@@ -534,6 +580,7 @@ const matches: Match[] = [
     goals: 1,
     assists: 0,
     match_mvp: false,
+    date: '2024-09-22',
   },
   {
     id: 7,
@@ -542,6 +589,7 @@ const matches: Match[] = [
     goals: 3,
     assists: 0,
     match_mvp: false,
+    date: '2024-09-15',
   },
   {
     id: 6,
@@ -550,6 +598,7 @@ const matches: Match[] = [
     goals: 2,
     assists: 0,
     match_mvp: false,
+    date: '2024-06-09',
   },
   {
     id: 5,
@@ -558,6 +607,7 @@ const matches: Match[] = [
     goals: 4,
     assists: 0,
     match_mvp: false,
+    date: '2024-06-09',
   },
   {
     id: 4,
@@ -566,6 +616,7 @@ const matches: Match[] = [
     goals: 4,
     assists: 0,
     match_mvp: false,
+    date: '2024-06-06',
   },
   {
     id: 3,
@@ -574,6 +625,7 @@ const matches: Match[] = [
     goals: 2,
     assists: 0,
     match_mvp: false,
+    date: '2024-06-04',
   },
   {
     id: 2,
@@ -582,6 +634,7 @@ const matches: Match[] = [
     goals: 2,
     assists: 0,
     match_mvp: false,
+    date: '2024-05-31',
   },
   {
     id: 1,
@@ -590,6 +643,7 @@ const matches: Match[] = [
     goals: 1,
     assists: 0,
     match_mvp: false,
+    date: '2024-05-26',
   },
 ];
 
