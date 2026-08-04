@@ -106,7 +106,13 @@
       svgContent += `
       <rect class="growbar" x="${x}" y="${H-padB}" width="${barW}" height="0" data-h="${h}" data-y="${y}" rx="6" fill="${color}" opacity="0.9" />
       <text class="chart-bar-value" x="${x + barW/2}" y="${y - 10}" text-anchor="middle" font-size="18">${d.gols}</text>
-      <text class="chart-bar-label" x="${x + barW/2}" y="${H-padB+20}" text-anchor="middle">${d.name.split(' ').slice(0,2).join(' ')}</text>
+      <text class="chart-bar-label" x="${x + barW/2}" y="${H-padB+20}" text-anchor="middle">${d.name
+  .trim()
+  .split(/\s+/)
+  .map((palavra, index, array) =>
+    index === array.length - 1 ? ` ${palavra}` : palavra.charAt(0)
+  )
+  .join('')}</text>
     `;
   });
   svgContent += `<line x1="${padL}" y1="${H-padB}" x2="${W-10}" y2="${H-padB}" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>`;
