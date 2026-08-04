@@ -1,0 +1,21 @@
+export interface RawCompetition {
+  name: string;
+  team: 'G3X' | 'BRASIL' | 'PORCINOS';
+  jogos: number;
+  gols: number;
+  assistencias: number;
+  mvp: number;
+}
+
+export interface Competition extends RawCompetition {
+  media: number;
+}
+
+export type TitleResultado = 'campeao' | 'mvp' | 'artilheiro' | 'vice';
+
+export interface TitleItem {
+  nome: string;
+  categoria: string;
+  resultado: TitleResultado;
+  edicoes: string[];
+}
