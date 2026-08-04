@@ -22,41 +22,77 @@ const teamClass = {
 };
 
 const titulosData = [
+  // --- 1. TÍTULOS (CAMPEÃO) ---
   { 
-    nome: "Kings World Cup Nations", 
+    nome: "KWC Nations", 
     categoria: "Seleção Brasileira", 
     resultado: "campeao",
     edicoes: ["24/25", "25/26"] 
   },
   { 
-    nome: "Kings World Cup Clubs", 
+    nome: "KWC Clubs", 
     categoria: "G3X FC", 
     resultado: "campeao", 
     edicoes: ["25/26"] 
   },
+
+  // --- 2. PREMIAÇÕES INDIVIDUAIS: MVP ---
   { 
-    nome: "Kings Cup Brasil", 
-    categoria: "G3X FC", 
-    resultado: "vice", 
-    edicoes: ["25/26"] 
-  },
-  { 
-    nome: "Kings League Brasil Split 2", 
-    categoria: "G3X FC", 
-    resultado: "vice", 
-    edicoes: ["25/26"] 
-  },
-  { 
-    nome: "Kings World Cup Nations", 
+    nome: "KWC Nations", 
     categoria: "Seleção Brasileira", 
     resultado: "mvp", 
     edicoes: ["24/25"] 
   },
   { 
-    nome: "Kings World Cup Clubs", 
+    nome: "KWC Clubs", 
     categoria: "G3X FC", 
     resultado: "mvp", 
     edicoes: ["23/24"] 
+  },
+
+  // --- 3. PREMIAÇÕES INDIVIDUAIS: ARTILHARIA ---
+  { 
+    nome: "KWC Clubs", 
+    categoria: "G3X FC", 
+    resultado: "artilheiro", 
+    edicoes: ["23/24", "25/26"] 
+  },
+  { 
+    nome: "KWC Nations", 
+    categoria: "Seleção Brasileira", 
+    resultado: "artilheiro", 
+    edicoes: ["24/25"] 
+  },
+  { 
+    nome: "KL Brasil", 
+    categoria: "G3X FC", 
+    resultado: "artilheiro", 
+    edicoes: ["25/26"] 
+  },
+  { 
+    nome: "KC Brasil", 
+    categoria: "G3X FC", 
+    resultado: "artilheiro", 
+    edicoes: ["25/26"] 
+  },
+
+  // --- 4. VICE-CAMPEONATOS ---
+  { 
+    nome: "KWC Clubs", 
+    categoria: "G3X FC", 
+    resultado: "vice", 
+    edicoes: ["23/24"] 
+  },{ 
+    nome: "KL Brasil", 
+    categoria: "G3X FC", 
+    resultado: "vice", 
+    edicoes: ["25/26"] 
+  },
+  { 
+    nome: "KC BR", 
+    categoria: "G3X FC", 
+    resultado: "vice", 
+    edicoes: ["25/26"] 
   }
 ];
 
@@ -66,6 +102,7 @@ if (titlesGrid) {
     const card = document.createElement('div');
     const isCampeao = item.resultado === 'campeao' 
     const isMvp = item.resultado === 'mvp';
+    const isArtilheiro = item.resultado === 'artilheiro'
 
 
     if (isMvp) {
@@ -80,7 +117,22 @@ if (titlesGrid) {
         </div>
         <h3 class="title-name">${item.nome}</h3>
         <div class="title-editions">
-            ${item.edicoes.map(ed => `<span class="edition-tag">Edição ${ed}</span>`).join(' ')}
+            ${item.edicoes.map(ed => `<span class="edition-tag">${ed}</span>`).join(' ')}
+        </div>
+        `;
+    } else  if (isArtilheiro) {
+        card.className = `title-card artilheiro`;
+
+        const badgeText =  (item.edicoes.length > 1 ? `Artilheiro (${item.edicoes.length}x)` : 'Artilheiro') 
+
+        card.innerHTML = `
+        <div class="title-head">
+            <span class="badge artilheiro">${badgeText}</span>
+            <span class="title-team">${item.categoria}</span>
+        </div>
+        <h3 class="title-name">${item.nome}</h3>
+        <div class="title-editions">
+            ${item.edicoes.map(ed => `<span class="edition-tag">${ed}</span>`).join(' ')}
         </div>
         `;
     } else {
@@ -97,7 +149,7 @@ if (titlesGrid) {
         </div>
         <h3 class="title-name">${item.nome}</h3>
         <div class="title-editions">
-            ${item.edicoes.map(ed => `<span class="edition-tag">Edição ${ed}</span>`).join(' ')}
+            ${item.edicoes.map(ed => `<span class="edition-tag">${ed}</span>`).join(' ')}
         </div>
         `;
     } 

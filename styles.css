@@ -8,6 +8,7 @@
   --gold-dim: #7a651a;
   --blue: #2f6fff;
   --blue-soft: #5b8cff;
+  --red: #ff2f2f;
   --magenta: #ff2e8e;
   --paper: #f2efe4;
   --paper-dim: rgba(242, 239, 228, 0.62);
@@ -381,6 +382,15 @@ h2.title {
   border-color: rgba(26, 221, 255, 0.4);
 }
 
+.title-card.artilheiro {
+  background: linear-gradient(145deg, rgba(243, 97, 92, 0.08), var(--panel-2) 70%);
+}
+
+.title-card.artilheiro:hover {
+  border-color: rgba(255, 26, 26, 0.4);
+}
+
+
 .title-card.silver {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), var(--panel-2) 70%);
 }
@@ -412,6 +422,11 @@ h2.title {
 
 .badge.mvp {
   background: var(--blue);
+  color: var(--ink);
+}
+
+.badge.artilheiro {
+  background: var(--red);
   color: var(--ink);
 }
 
