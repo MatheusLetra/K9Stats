@@ -342,6 +342,114 @@ h2.title {
   text-align: right;
 }
 
+/* ================= TITLES SECTION ================= */
+.titles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.title-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  background: var(--panel-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.title-card:hover {
+  transform: translateY(-4px);
+}
+
+.title-card.gold {
+  background: linear-gradient(145deg, rgba(255, 210, 26, 0.08), var(--panel-2) 70%);
+}
+
+.title-card.gold:hover {
+  border-color: rgba(255, 210, 26, 0.4);
+}
+
+.title-card.mvp {
+  background: linear-gradient(145deg, rgba(92, 200, 243, 0.08), var(--panel-2) 70%);
+}
+
+.title-card.mvp:hover {
+  border-color: rgba(26, 221, 255, 0.4);
+}
+
+.title-card.silver {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), var(--panel-2) 70%);
+}
+
+.title-card.silver:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.title-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.badge.gold {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.badge.mvp {
+  background: var(--blue);
+  color: var(--ink);
+}
+
+.badge.silver {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--paper-dim);
+}
+
+.title-team {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--paper-faint);
+  text-transform: uppercase;
+}
+
+.title-name {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.01em;
+  color: var(--paper);
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.title-editions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.edition-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--paper-dim);
+}
+
 /* ================= KPI STRIP ================= */
 .kpis {
   display: grid;

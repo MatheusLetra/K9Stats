@@ -21,6 +21,91 @@ const teamClass = {
     "PORCINOS": "porcinos"
 };
 
+const titulosData = [
+  { 
+    nome: "Kings World Cup Nations", 
+    categoria: "Seleção Brasileira", 
+    resultado: "campeao",
+    edicoes: ["24/25", "25/26"] 
+  },
+  { 
+    nome: "Kings World Cup Clubs", 
+    categoria: "G3X FC", 
+    resultado: "campeao", 
+    edicoes: ["25/26"] 
+  },
+  { 
+    nome: "Kings Cup Brasil", 
+    categoria: "G3X FC", 
+    resultado: "vice", 
+    edicoes: ["25/26"] 
+  },
+  { 
+    nome: "Kings League Brasil Split 2", 
+    categoria: "G3X FC", 
+    resultado: "vice", 
+    edicoes: ["25/26"] 
+  },
+  { 
+    nome: "Kings World Cup Nations", 
+    categoria: "Seleção Brasileira", 
+    resultado: "mvp", 
+    edicoes: ["24/25"] 
+  },
+  { 
+    nome: "Kings World Cup Clubs", 
+    categoria: "G3X FC", 
+    resultado: "mvp", 
+    edicoes: ["23/24"] 
+  }
+];
+
+const titlesGrid = document.getElementById('titlesGrid');
+if (titlesGrid) {
+  titulosData.forEach(item => {
+    const card = document.createElement('div');
+    const isCampeao = item.resultado === 'campeao' 
+    const isMvp = item.resultado === 'mvp';
+
+
+    if (isMvp) {
+        card.className = `title-card mvp`;
+    
+        const badgeText = 'MVP'
+
+        card.innerHTML = `
+        <div class="title-head">
+            <span class="badge mvp">${badgeText}</span>
+            <span class="title-team">${item.categoria}</span>
+        </div>
+        <h3 class="title-name">${item.nome}</h3>
+        <div class="title-editions">
+            ${item.edicoes.map(ed => `<span class="edition-tag">Edição ${ed}</span>`).join(' ')}
+        </div>
+        `;
+    } else {
+        card.className = `title-card ${isCampeao ? 'gold' : 'silver'}`;
+
+        const badgeText = isCampeao 
+        ? (item.edicoes.length > 1 ? `Campeão (${item.edicoes.length}x)` : 'Campeão') 
+        : 'Vice-campeão';
+
+        card.innerHTML = `
+        <div class="title-head">
+            <span class="badge ${isCampeao ? 'gold' : 'silver'}">${badgeText}</span>
+            <span class="title-team">${item.categoria}</span>
+        </div>
+        <h3 class="title-name">${item.nome}</h3>
+        <div class="title-editions">
+            ${item.edicoes.map(ed => `<span class="edition-tag">Edição ${ed}</span>`).join(' ')}
+        </div>
+        `;
+    } 
+    
+    titlesGrid.appendChild(card);
+  });
+}
+
 // ---------- dynamic calculations ----------
 const totalJogos = data.reduce((acc, curr) => acc + curr.jogos, 0);
 const totalGols = data.reduce((acc, curr) => acc + curr.gols, 0);
