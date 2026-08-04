@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K9 — Kelvin Oliveira | Estatísticas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-num display">9</div>
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Kings League · Brasil</div>
+      <h1 class="hero-name display reveal">Kelvin<br>Oliveira <span class="k9">"K9"</span></h1>
+      <p class="hero-sub reveal">Presidente e Artilheiro do G3X, bi-campeão do mundo com a Seleção Brasileira na Kings World Cup Nations e campeão mundial de clubes pelo G3X.</p>
+      <div class="hero-tags reveal">
+        <span class="tag"><b>129</b> gols na carreira</span>
+        <span class="tag"><b>55</b> jogos disputados</span>
+        <span class="tag"><b>2,4</b> média geral</span>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="./assets/hero.png" alt="Kelvin Oliveira" srcset="">
+    </div>
+    <!-- <div class="jersey">
+      <div class="jersey-glow"></div>
+      <svg viewBox="0 0 200 232" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="jerseyGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#182238"/>
+            <stop offset="100%" stop-color="#0c1220"/>
+          </linearGradient>
+        </defs>
+        <path d="M60 10 L20 34 L34 62 L52 50 L52 210 Q100 222 148 210 L148 50 L166 62 L180 34 L140 10 Q100 26 60 10 Z"
+              fill="url(#jerseyGrad)" stroke="#ffd21a" stroke-width="2"/>
+        <path d="M60 10 Q100 26 140 10" fill="none" stroke="#ffd21a" stroke-width="2"/>
+        <text x="100" y="150" text-anchor="middle" font-family="Anton, sans-serif" font-size="88" fill="#ffd21a">9</text>
+        <text x="100" y="40" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="3" fill="#f2efe4" opacity="0.8">K9 · G3X</text>
+      </svg>
+    </div> -->
+  </div>
+  <div class="scroll-cue"><div class="line"></div>ROLE PARA OS NÚMEROS</div>
+</section>
+
+<section id="kpis">
+  <div class="section-head reveal">
+    <div>
+      <div class="eyebrow">Resumo geral</div>
+      <h2 class="title">Números da carreira</h2>
+    </div>
+    <p class="section-note">Somatório de todas as competições disputadas, do primeiro split da Kings League Brasil ao título com a Seleção.</p>
+  </div>
+  <div class="kpis reveal">
+    <div class="kpi">
+      <div class="kpi-label">Jogos</div>
+      <div class="kpi-value"><span class="count" data-target="55">0</span></div>
+      <div class="kpi-foot">em 8 competições</div>
+    </div>
+    <div class="kpi accent">
+      <div class="kpi-label">Gols</div>
+      <div class="kpi-value"><span class="count" data-target="129">0</span></div>
+      <div class="kpi-foot">artilheiro em série</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Média geral</div>
+      <div class="kpi-value"><span class="count" data-target="2.4" data-decimal="1">0</span></div>
+      <div class="kpi-foot">gols por jogo</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Melhor média</div>
+      <div class="kpi-value"><span class="count" data-target="3.8" data-decimal="1">0</span></div>
+      <div class="kpi-foot">Kings World Cup Nations 24/25</div>
+    </div>
+  </div>
+</section>
+
+<section id="competicoes">
+  <div class="section-head reveal">
+    <div>
+      <div class="eyebrow">Detalhamento</div>
+      <h2 class="title">Competição por competição</h2>
+    </div>
+    <p class="section-note">Jogos, gols e média em cada torneio — do G3X na Kings League Brasil à Seleção na Kings World Cup Nations.</p>
+  </div>
+
+  <div class="comp-head reveal">
+    <span>Competição</span>
+    <span>Jogos</span>
+    <span>Gols</span>
+    <span>Aproveitamento</span>
+    <span>Média</span>
+  </div>
+  <div class="comp-list reveal" id="compList"></div>
+</section>
+
+
+<section id="grafico">
+  <div class="section-head reveal">
+    <div>
+      <div class="eyebrow">Comparativo</div>
+      <h2 class="title">Gols por competição</h2>
+    </div>
+    <p class="section-note">Kings League Brasil Split 2 é o pico de produção: 33 gols em 12 jogos vestindo o G3X.</p>
+  </div>
+  <div class="chart-panel reveal">
+    <svg id="barChart" viewBox="0 0 900 380"></svg>
+  </div>
+</section>
+
+
+<section id="totais">
+  <div class="section-head reveal">
+    <div>
+      <div class="eyebrow">Consolidado</div>
+      <h2 class="title">Carreira × Clube</h2>
+    </div>
+    <p class="section-note">O total geral soma todas as camisas vestidas; o recorte G3X isola apenas a produção pelo clube.</p>
+  </div>
+  <div class="totals-grid reveal">
+    <div class="total-card">
+      <div class="eyebrow">Total geral</div>
+      <div class="total-row"><span class="l">Jogos</span><span class="v">55</span></div>
+      <div class="total-row"><span class="l">Gols</span><span class="v" style="color:var(--gold)">129</span></div>
+      <div class="total-row"><span class="l">Média</span><span class="v">2,4</span></div>
+    </div>
+    <div class="total-card club">
+      <div class="eyebrow">Somente G3X</div>
+      <div class="total-row"><span class="l">Jogos</span><span class="v">41</span></div>
+      <div class="total-row"><span class="l">Gols</span><span class="v" style="color:var(--blue-soft)">94</span></div>
+      <div class="total-row"><span class="l">Média</span><span class="v">2,3</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand display">K<span class="k9">9</span> · KELVIN OLIVEIRA</div>
+  <p>Dados de competições da Kings League &amp; Kings World Cup Nations</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
