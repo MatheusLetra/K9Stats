@@ -1,13 +1,14 @@
 const rawData = [
-    { name: "Kings World Cup Clubs 25/26", team: "G3X", jogos: 5, gols: 14 },
-    { name: "Kings World Cup Clubs 23/24", team: "G3X", jogos: 6, gols: 13 },
-    { name: "Kings League Brasil Split 1", team: "G3X", jogos: 10, gols: 15 },
-    { name: "Kings League Brasil Split 2", team: "G3X", jogos: 12, gols: 33 },
-    { name: "Kings Cup Brasil 25/26", team: "G3X", jogos: 8, gols: 19 },
-    { name: "Kings World Cup Nations 25/26", team: "BRASIL", jogos: 7, gols: 12 },
-    { name: "Kings World Cup Nations 24/25", team: "BRASIL", jogos: 5, gols: 19 },
-    { name: "KLSP", team: "PORCINOS", jogos: 2, gols: 4 }
-]
+    { name: "Kings Cup Brasil 26/27", team: "G3X", jogos: 0, gols: 0, assistencias: 0, mvp: 0 },
+    { name: "Kings World Cup Clubs 25/26", team: "G3X", jogos: 5, gols: 14, assistencias: 0, mvp: 2 },
+    { name: "Kings League Brasil Split 2", team: "G3X", jogos: 12, gols: 33, assistencias: 6, mvp: 8 },
+    { name: "Kings Cup Brasil 25/26", team: "G3X", jogos: 8, gols: 19, assistencias: 5, mvp: 7 },
+    { name: "Kings World Cup Nations 25/26", team: "BRASIL", jogos: 7, gols: 12, assistencias: 1, mvp: 4 },
+    { name: "Kings League Brasil Split 1", team: "G3X", jogos: 10, gols: 15, assistencias: 3, mvp: 2 },
+    { name: "Kings World Cup Nations 24/25", team: "BRASIL", jogos: 5, gols: 19, assistencias: 4, mvp: 5 },
+    { name: "KLSP", team: "PORCINOS", jogos: 2, gols: 4, assistencias: 0, mvp: 0 },
+    { name: "Kings World Cup Clubs 23/24", team: "G3X", jogos: 6, gols: 13, assistencias: 7, mvp: 5 },
+];
 
 const data = rawData.map(d => ({
     ...d,
@@ -23,8 +24,13 @@ const teamClass = {
 // ---------- dynamic calculations ----------
 const totalJogos = data.reduce((acc, curr) => acc + curr.jogos, 0);
 const totalGols = data.reduce((acc, curr) => acc + curr.gols, 0);
+const totalAssistencias = data.reduce((acc, curr) => acc + curr.assistencias, 0);
+const totalMvp = data.reduce((acc, curr) => acc + curr.mvp, 0);
+
 const mediaGeral = totalGols / totalJogos;
-const melhorMedia = Math.max(...data.map(d => d.media));
+
+// Encontra dinamicamente o objeto da competição com a maior média
+const compMelhorMedia = data.reduce((max, item) => item.media > max.media ? item : max, data[0]);
 
 const g3xData = data.filter(d => d.team === 'G3X');
 const g3xJogos = g3xData.reduce((acc, curr) => acc + curr.jogos, 0);
@@ -48,8 +54,18 @@ document.getElementById('heroMedia').textContent = mediaGeral.toFixed(1).replace
 // Update KPIs data-targets
 document.getElementById('kpiJogos').dataset.target = totalJogos;
 document.getElementById('kpiGols').dataset.target = totalGols;
+document.getElementById('kpiAssistencias').dataset.target = totalAssistencias;
+document.getElementById('kpiMvp').dataset.target = totalMvp;
 document.getElementById('kpiMedia').dataset.target = mediaGeral.toFixed(1);
-document.getElementById('kpiMelhorMedia').dataset.target = melhorMedia.toFixed(1);
+
+// Update KPI de Melhor Média e o rodapé dinâmico com o nome do torneio
+document.getElementById('kpiMelhorMedia').dataset.target = compMelhorMedia.media.toFixed(1);
+const melhorMediaFootEl = document.getElementById('kpiMelhorMediaFoot');
+if (melhorMediaFootEl && compMelhorMedia) {
+    melhorMediaFootEl.textContent = compMelhorMedia.name;
+}
+
+document.getElementById('kpiCompeticoes').textContent = `em ${data.length} competições`
 
 // Update Totals Section
 document.getElementById('totalGeralJogos').textContent = totalJogos;
@@ -74,6 +90,8 @@ data.forEach(d => {
     </div>
     <div class="comp-stat"><div class="v">${d.jogos}</div><div class="l">Jogos</div></div>
     <div class="comp-stat"><div class="v">${d.gols}</div><div class="l">Gols</div></div>
+    <div class="comp-stat"><div class="v">${d.assistencias}</div><div class="l">Ast</div></div>
+    <div class="comp-stat"><div class="v">${d.mvp}</div><div class="l">MVP</div></div>
     <div class="bar-wrap">
       <div class="bar-track"><div class="bar-fill" data-w="${barPct}"></div></div>
     </div>

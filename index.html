@@ -42,12 +42,22 @@
     <div class="kpi">
       <div class="kpi-label">Jogos</div>
       <div class="kpi-value"><span class="count" id="kpiJogos" data-target="0">0</span></div>
-      <div class="kpi-foot">em 8 competições</div>
+      <div class="kpi-foot" id="kpiCompeticoes">em 0 competições</div>
     </div>
     <div class="kpi accent">
       <div class="kpi-label">Gols</div>
       <div class="kpi-value"><span class="count" id="kpiGols" data-target="0">0</span></div>
       <div class="kpi-foot">artilheiro em série</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Assistências</div>
+      <div class="kpi-value"><span class="count" id="kpiAssistencias" data-target="0">0</span></div>
+      <div class="kpi-foot">passes para gol</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">MVPs</div>
+      <div class="kpi-value"><span class="count" id="kpiMvp" data-target="0">0</span></div>
+      <div class="kpi-foot">melhor da partida</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Média geral</div>
@@ -57,7 +67,7 @@
     <div class="kpi">
       <div class="kpi-label">Melhor média</div>
       <div class="kpi-value"><span class="count" id="kpiMelhorMedia" data-target="0" data-decimal="1">0</span></div>
-      <div class="kpi-foot">Kings World Cup Nations 24/25</div>
+      <div class="kpi-foot" id="kpiMelhorMediaFoot">--</div>
     </div>
   </div>
 </section>
@@ -68,13 +78,15 @@
       <div class="eyebrow">Detalhamento</div>
       <h2 class="title">Competição por competição</h2>
     </div>
-    <p class="section-note">Jogos, gols e média em cada torneio — do G3X na Kings League Brasil à Seleção na Kings World Cup Nations.</p>
+    <p class="section-note">Jogos, gols, assistências, MVPs e média em cada torneio — do G3X na Kings League Brasil à Seleção na Kings World Cup Nations.</p>
   </div>
 
   <div class="comp-head reveal">
     <span>Competição</span>
     <span>Jogos</span>
     <span>Gols</span>
+    <span>Ast</span>
+    <span>MVP</span>
     <span>Aproveitamento</span>
     <span>Média</span>
   </div>
