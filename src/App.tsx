@@ -9,6 +9,8 @@ import { TotalsSection } from './components/TotalsSection';
 import { TimelineSection } from './components/TimelineSection';
 import { VideosSection } from './components/VideosSection';
 import { Navbar } from './components/NavBar';
+import { MatchesSection } from './components/MatchesSection';
+import { matches, teams } from './data/matches';
 
 export const App: React.FC = () => {
   const stats = useMemo(() => {
@@ -82,6 +84,8 @@ export const App: React.FC = () => {
         g3xGols={stats.g3xGols}
         g3xMedia={stats.g3xMedia}
       />
+
+      <MatchesSection matches={matches} teams={teams} itemsPerPage={10} />
 
       <VideosSection videos={videosData} />
 

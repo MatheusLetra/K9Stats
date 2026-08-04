@@ -36,3 +36,23 @@ export interface VideoItem {
   category: string;
   description: string;
 }
+
+export interface Team {
+  id: number;
+  name: string;
+  logo: string;
+}
+
+export interface Match {
+  id: number;
+  rival_id: number;
+  self_team: number;
+  goals: number;
+  assists: number;
+  match_mvp: boolean;
+}
+
+export interface FormattedMatch extends Match {
+  selfTeamData?: Team;
+  rivalTeamData?: Team;
+}

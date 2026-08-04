@@ -10,6 +10,7 @@ export const Navbar: React.FC = () => {
     { name: 'Torneios', href: '#competicoes' },
     { name: 'Gráfico', href: '#grafico' },
     { name: 'Geral vs G3X', href: '#totais' },
+    { name: 'Todos os Jogos', href: '#jogos' },
     { name: 'Vídeos', href: '#videos' },
   ];
 
