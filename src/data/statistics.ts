@@ -1,4 +1,4 @@
-import type {  RawCompetition, Competition, TitleItem } from '../types';
+import type {  RawCompetition, Competition, TitleItem, TimelineEvent } from '../types';
 
 export const rawData: RawCompetition[] = [
   { name: "Kings Cup Brasil 26/27", team: "G3X", jogos: 0, gols: 0, assistencias: 0, mvp: 0 },
@@ -29,4 +29,72 @@ export const titulosData: TitleItem[] = [
   { nome: "KWC Clubs", categoria: "G3X FC", resultado: "vice", edicoes: ["23/24"] },
   { nome: "KL Brasil", categoria: "G3X FC", resultado: "vice", edicoes: ["25/26"] },
   { nome: "KC Brasil", categoria: "G3X FC", resultado: "vice", edicoes: ["25/26"] }
+];
+
+
+export const timelineData: TimelineEvent[] = [
+  {
+    year: "2024",
+    title: "Kings World Cup Clubs",
+    team: "G3X",
+    description: "Vice-campeão e eleito MVP e artilheiro da primeira edição do mundial de clubes.",
+    tag: "MVP & Artilheiro",
+    winTrophy: false
+  },
+  {
+    year: "2024/25",
+    title: "Kings World Cup Nations",
+    team: "BRASIL",
+    description: "Campeão mundial com a Seleção Brasileira, eleito MVP do torneio e artilheiro isolado.",
+    tag: "Campeão & MVP",
+    winTrophy: true
+  },
+  {
+    year: "2024/25",
+    title: "Kings League Brasil Split 1",
+    team: "G3X",
+    description: "Números consistentes, mas com eliminação precoce.",
+    tag: "Artilheiro",
+    winTrophy: false
+  },
+  {
+    year: "2025/26",
+    title: "Kings Cup Brasil",
+    team: "G3X",
+    description: "Manutenção dos números individuais em mais um vice-campeonato dolorido.",
+    tag: "Artilheiro",
+    winTrophy: false
+  },
+  {
+    year: "2025/26",
+    title: "Kings World Cup Nations",
+    team: "BRASIL",
+    description: "Bicampeonato consecutivo defendendo a Seleção Brasileira. Mesmo com menos minutos em quadra, foi um dos grandes destaques da equipe.",
+    tag: "Bicampeão Mundial",
+    winTrophy: true
+  },
+  {
+    year: "2025/26",
+    title: "Kings League Brasil Split 2",
+    team: "G3X",
+    description: "Individualmente fez jus à fama de melhor da história da modalidade em outro vice-campeonato dolorido.",
+    tag: "Artilheiro",
+    winTrophy: false
+  },
+  {
+    year: "2025/26",
+    title: "Kings World Cup Clubs",
+    team: "G3X",
+    description: "A REDENÇÃO. Conquista inédita do título mundial pelo G3X FC e nova artilharia no torneio. 9 gols nos últimos dois jogos, 5 na final.",
+    tag: "Campeão & Artilheiro",
+    winTrophy: true
+  },
+  {
+    year: "2026/27",
+    title: "Kings Cup Brasil",
+    team: "G3X",
+    description: "Próxima competição.",
+    tag: "Em breve",
+    winTrophy: false
+  }
 ];

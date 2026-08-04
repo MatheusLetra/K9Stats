@@ -1,11 +1,12 @@
 import React, { useMemo } from 'react';
-import { competitionsData, titulosData } from './data/statistics';
+import { competitionsData, timelineData, titulosData } from './data/statistics';
 import { HeroSection } from './components/HeroSection';
 import { TitlesSection } from './components/TitlesSection';
 import { KpiSection } from './components/KpiSection';
 import { CompetitionList } from './components/CompetitionList';
 import { BarChart } from './components/BarChart';
 import { TotalsSection } from './components/TotalsSection';
+import { TimelineSection } from './components/TimelineSection';
 
 export const App: React.FC = () => {
   const stats = useMemo(() => {
@@ -54,6 +55,7 @@ export const App: React.FC = () => {
         mediaGeral={stats.mediaGeral}
       />
       <TitlesSection titulos={titulosData} />
+      <TimelineSection events={timelineData} />
       <KpiSection
         data={competitionsData}
         totalJogos={stats.totalJogos}

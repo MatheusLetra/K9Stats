@@ -19,3 +19,12 @@ export interface TitleItem {
   resultado: TitleResultado;
   edicoes: string[];
 }
+
+export interface TimelineEvent {
+  year: string;
+  title: string;
+  team: 'G3X' | 'BRASIL' | 'PORCINOS';
+  description: string;
+  tag: string;
+  winTrophy: boolean;
+}
