@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { competitionsData, timelineData, titulosData } from './data/statistics';
+import { competitionsData, timelineData, titulosData, videosData } from './data/statistics';
 import { HeroSection } from './components/HeroSection';
 import { TitlesSection } from './components/TitlesSection';
 import { KpiSection } from './components/KpiSection';
@@ -7,6 +7,7 @@ import { CompetitionList } from './components/CompetitionList';
 import { BarChart } from './components/BarChart';
 import { TotalsSection } from './components/TotalsSection';
 import { TimelineSection } from './components/TimelineSection';
+import { VideosSection } from './components/VideosSection';
 
 export const App: React.FC = () => {
   const stats = useMemo(() => {
@@ -79,6 +80,9 @@ export const App: React.FC = () => {
         g3xGols={stats.g3xGols}
         g3xMedia={stats.g3xMedia}
       />
+
+      <VideosSection videos={videosData} />
+
       <footer>
         <div className="brand display">
           K<span className="k9">9</span> · KELVIN OLIVEIRA

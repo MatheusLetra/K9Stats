@@ -1,4 +1,4 @@
-import type {  RawCompetition, Competition, TitleItem, TimelineEvent } from '../types';
+import type {  RawCompetition, Competition, TitleItem, TimelineEvent, VideoItem } from '../types';
 
 export const rawData: RawCompetition[] = [
   { name: "Kings Cup Brasil 26/27", team: "G3X", jogos: 0, gols: 0, assistencias: 0, mvp: 0 },
@@ -96,5 +96,29 @@ export const timelineData: TimelineEvent[] = [
     description: "Próxima competição.",
     tag: "Em breve",
     winTrophy: false
+  }
+];
+
+export const videosData: VideoItem[] = [
+  {
+    id: '1',
+    youtubeId: '6ihE5l3D-ik',
+    title: 'Os gols do título inédito',
+    category: 'Kings World Cup Clubs',
+    description: 'Compilado dos gols do G3X FC durante a campanha do título mundial.'
+  },
+  {
+    id: '2',
+    youtubeId: 'T0QPY2asGR8',
+    title: '19 gols em 5 jogos!',
+    category: 'Kings World Cup Nations',
+    description: 'Todos os gols do K9 no primeiro título mundial da seleção brasileira na KL.'
+  },
+  {
+    id: '3',
+    youtubeId: 'SnxH_4P8qWU',
+    title: '100 gols!',
+    category: 'Kings League',
+    description: 'Os 100 primeiros gols de Kelvin Oliveira no Universo KL.'
   }
 ];

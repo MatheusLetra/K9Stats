@@ -28,3 +28,11 @@ export interface TimelineEvent {
   tag: string;
   winTrophy: boolean;
 }
+
+export interface VideoItem {
+  id: string;
+  youtubeId: string;
+  title: string;
+  category: string;
+  description: string;
+}
