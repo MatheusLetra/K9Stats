@@ -6,7 +6,7 @@ const rawData = [
     { name: "Kings World Cup Nations 25/26", team: "BRASIL", jogos: 7, gols: 12, assistencias: 1, mvp: 4 },
     { name: "Kings League Brasil Split 1", team: "G3X", jogos: 10, gols: 15, assistencias: 3, mvp: 2 },
     { name: "Kings World Cup Nations 24/25", team: "BRASIL", jogos: 5, gols: 19, assistencias: 4, mvp: 5 },
-    { name: "KLSP", team: "PORCINOS", jogos: 2, gols: 4, assistencias: 0, mvp: 2 },
+    { name: "Kings League Spain", team: "PORCINOS", jogos: 2, gols: 4, assistencias: 0, mvp: 2 },
     { name: "Kings World Cup Clubs 23/24", team: "G3X", jogos: 6, gols: 13, assistencias: 7, mvp: 5 },
 ];
 
@@ -89,7 +89,7 @@ const titulosData = [
     edicoes: ["25/26"] 
   },
   { 
-    nome: "KC BR", 
+    nome: "KC Brasil", 
     categoria: "G3X FC", 
     resultado: "vice", 
     edicoes: ["25/26"] 
