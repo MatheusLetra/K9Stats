@@ -8,6 +8,7 @@ import { BarChart } from './components/BarChart';
 import { TotalsSection } from './components/TotalsSection';
 import { TimelineSection } from './components/TimelineSection';
 import { VideosSection } from './components/VideosSection';
+import { Navbar } from './components/NavBar';
 
 export const App: React.FC = () => {
   const stats = useMemo(() => {
@@ -50,6 +51,7 @@ export const App: React.FC = () => {
 
   return (
     <>
+      <Navbar />
       <HeroSection
         totalGols={stats.totalGols}
         totalJogos={stats.totalJogos}
