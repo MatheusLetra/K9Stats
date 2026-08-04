@@ -18,9 +18,9 @@
       <h1 class="hero-name display reveal">Kelvin<br>Oliveira <span class="k9">"K9"</span></h1>
       <p class="hero-sub reveal">Presidente e Artilheiro do G3X, bi-campeão do mundo com a Seleção Brasileira na Kings World Cup Nations e campeão mundial de clubes pelo G3X.</p>
       <div class="hero-tags reveal">
-        <span class="tag"><b>129</b> gols na KL</span>
-        <span class="tag"><b>55</b> jogos disputados</span>
-        <span class="tag"><b>2,4</b> média geral</span>
+        <span class="tag"><b id="heroGols">0</b> gols na KL</span>
+        <span class="tag"><b id="heroJogos">0</b> jogos disputados</span>
+        <span class="tag"><b id="heroMedia">0,0</b> média geral</span>
       </div>
     </div>
     <div class="hero-image">
@@ -41,22 +41,22 @@
   <div class="kpis reveal">
     <div class="kpi">
       <div class="kpi-label">Jogos</div>
-      <div class="kpi-value"><span class="count" data-target="55">0</span></div>
+      <div class="kpi-value"><span class="count" id="kpiJogos" data-target="0">0</span></div>
       <div class="kpi-foot">em 8 competições</div>
     </div>
     <div class="kpi accent">
       <div class="kpi-label">Gols</div>
-      <div class="kpi-value"><span class="count" data-target="129">0</span></div>
+      <div class="kpi-value"><span class="count" id="kpiGols" data-target="0">0</span></div>
       <div class="kpi-foot">artilheiro em série</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Média geral</div>
-      <div class="kpi-value"><span class="count" data-target="2.4" data-decimal="1">0</span></div>
+      <div class="kpi-value"><span class="count" id="kpiMedia" data-target="0" data-decimal="1">0</span></div>
       <div class="kpi-foot">gols por jogo</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Melhor média</div>
-      <div class="kpi-value"><span class="count" data-target="3.8" data-decimal="1">0</span></div>
+      <div class="kpi-value"><span class="count" id="kpiMelhorMedia" data-target="0" data-decimal="1">0</span></div>
       <div class="kpi-foot">Kings World Cup Nations 24/25</div>
     </div>
   </div>
@@ -81,20 +81,18 @@
   <div class="comp-list reveal" id="compList"></div>
 </section>
 
-
 <section id="grafico">
   <div class="section-head reveal">
     <div>
       <div class="eyebrow">Comparativo</div>
       <h2 class="title">Gols por competição</h2>
     </div>
-    <p class="section-note">Kings League Brasil Split 2 é o pico de produção: 33 gols em 12 jogos vestindo o G3X.</p>
+    <p class="section-note" id="chartNote"></p>
   </div>
   <div class="chart-panel reveal">
     <svg id="barChart" viewBox="0 0 900 380"></svg>
   </div>
 </section>
-
 
 <section id="totais">
   <div class="section-head reveal">
@@ -107,15 +105,15 @@
   <div class="totals-grid reveal">
     <div class="total-card">
       <div class="eyebrow">Total geral</div>
-      <div class="total-row"><span class="l">Jogos</span><span class="v">55</span></div>
-      <div class="total-row"><span class="l">Gols</span><span class="v" style="color:var(--gold)">129</span></div>
-      <div class="total-row"><span class="l">Média</span><span class="v">2,4</span></div>
+      <div class="total-row"><span class="l">Jogos</span><span class="v" id="totalGeralJogos">0</span></div>
+      <div class="total-row"><span class="l">Gols</span><span class="v" style="color:var(--gold)" id="totalGeralGols">0</span></div>
+      <div class="total-row"><span class="l">Média</span><span class="v" id="totalGeralMedia">0,0</span></div>
     </div>
     <div class="total-card club">
       <div class="eyebrow">Somente G3X</div>
-      <div class="total-row"><span class="l">Jogos</span><span class="v">41</span></div>
-      <div class="total-row"><span class="l">Gols</span><span class="v" style="color:var(--blue-soft)">94</span></div>
-      <div class="total-row"><span class="l">Média</span><span class="v">2,3</span></div>
+      <div class="total-row"><span class="l">Jogos</span><span class="v" id="g3xJogos">0</span></div>
+      <div class="total-row"><span class="l">Gols</span><span class="v" style="color:var(--blue-soft)" id="g3xGols">0</span></div>
+      <div class="total-row"><span class="l">Média</span><span class="v" id="g3xMedia">0,0</span></div>
     </div>
   </div>
 </section>
