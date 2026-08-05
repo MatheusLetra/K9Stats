@@ -1237,10 +1237,49 @@ footer p {
   opacity: 0.8;
 }
 
+.match-scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.score-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-main {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.8rem;
+  color: var(--paper);
+}
+
+.score-divider {
+  color: var(--paper-dim);
+}
+
+.shootout-info {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--gold);
+  margin-top: 2px;
+}
+
+.match-badges {
+  display: flex;
+  gap: 6px;
+}
+
 .match-stats {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 8px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--line);
   padding: 10px;

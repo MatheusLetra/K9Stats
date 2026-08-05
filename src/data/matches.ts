@@ -182,6 +182,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2026-08-01',
+    rival_goals: 5,
+    self_team_goals: 9,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 54,
@@ -193,6 +197,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2026-08-01',
+    rival_goals: 2,
+    self_team_goals: 8,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 53,
@@ -204,6 +212,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-07-31',
+    rival_goals: 5,
+    self_team_goals: 6,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 52,
@@ -215,6 +227,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-07-28',
+    rival_goals: 2,
+    self_team_goals: 5,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 51,
@@ -226,6 +242,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2026-07-27',
+    rival_goals: 1,
+    self_team_goals: 5,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 50,
@@ -237,6 +257,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2026-05-18',
+    rival_goals: 5,
+    self_team_goals: 5,
+    rival_shootout_goals: 2,
+    self_team_shootout_goals: 1
   },
   {
     id: 49,
@@ -248,6 +272,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-05-15',
+    rival_goals: 3,
+    self_team_goals: 3,
+    rival_shootout_goals: 2,
+    self_team_shootout_goals: 3
   },
   {
     id: 48,
@@ -259,6 +287,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-05-11',
+    rival_goals: 2,
+    self_team_goals: 5,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 47,
@@ -270,6 +302,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-05-04',
+    rival_goals: 5,
+    self_team_goals: 5,
+    rival_shootout_goals: 2,
+    self_team_shootout_goals: 3
   },
   {
     id: 46,
@@ -281,6 +317,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: true,
     date: '2026-04-27',
+    rival_goals: 1,
+    self_team_goals: 4,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 45,
@@ -292,6 +332,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: false,
     date: '2026-04-20',
+    rival_goals: 6,
+    self_team_goals: 5,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 44,
@@ -303,6 +347,10 @@ const matches: Match[] = [
     assists: 2,
     match_mvp: true,
     date: '2026-04-13',
+    rival_goals: 5,
+    self_team_goals: 7,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 43,
@@ -314,6 +362,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2026-04-06',
+    rival_goals: 5,
+    self_team_goals: 2,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 42,
@@ -325,6 +377,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-03-30',
+    rival_goals: 3,
+    self_team_goals: 9,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 41,
@@ -336,6 +392,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-03-23',
+    rival_goals: 3,
+    self_team_goals: 8,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 40,
@@ -347,6 +407,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2026-03-16',
+    rival_goals: 2,
+    self_team_goals: 5,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 39,
@@ -358,6 +422,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-03-09',
+    rival_goals: 4,
+    self_team_goals: 10,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 38,
@@ -369,6 +437,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2026-01-17',
+    rival_goals: 2,
+    self_team_goals: 6,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 37,
@@ -380,6 +452,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2026-01-15',
+    rival_goals: 3,
+    self_team_goals: 8,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 36,
@@ -391,6 +467,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-01-13',
+    rival_goals: 5,
+    self_team_goals: 15,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 35,
@@ -402,6 +482,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: true,
     date: '2026-01-12',
+    rival_goals: 1,
+    self_team_goals: 7,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 34,
@@ -413,6 +497,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-01-11',
+    rival_goals: 1,
+    self_team_goals: 6,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 33,
@@ -424,6 +512,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2026-01-08',
+    rival_goals: 6,
+    self_team_goals: 7,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 32,
@@ -435,6 +527,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2026-01-03',
+    rival_goals: 7,
+    self_team_goals: 3,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 31,
@@ -446,6 +542,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2025-11-14',
+    rival_goals: 4,
+    self_team_goals: 4,
+    rival_shootout_goals: 3,
+    self_team_shootout_goals: 1
   },
   {
     id: 30,
@@ -457,6 +557,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: true,
     date: '2025-11-14',
+    rival_goals: 4,
+    self_team_goals: 4,
+    rival_shootout_goals: 2,
+    self_team_shootout_goals: 3
   },
   {
     id: 29,
@@ -468,6 +572,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: true,
     date: '2025-11-10',
+    rival_goals: 5,
+    self_team_goals: 6,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 28,
@@ -479,6 +587,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2025-11-03',
+    rival_goals: 4,
+    self_team_goals: 6,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 27,
@@ -490,6 +602,10 @@ const matches: Match[] = [
     assists: 2,
     match_mvp: true,
     date: '2025-10-27',
+    rival_goals: 6,
+    self_team_goals: 9,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 26,
@@ -501,6 +617,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2025-10-24',
+    rival_goals: 5,
+    self_team_goals: 8,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 25,
@@ -512,6 +632,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: false,
     date: '2025-10-20',
+    rival_goals: 8,
+    self_team_goals: 2,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 24,
@@ -523,6 +647,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2025-10-17',
+    rival_goals: 2,
+    self_team_goals: 4,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 23,
@@ -534,6 +662,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2025-05-09',
+    rival_goals: 8,
+    self_team_goals: 4,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 22,
@@ -545,6 +677,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2025-05-05',
+    rival_goals: 5,
+    self_team_goals: 4,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 21,
@@ -556,6 +692,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: true,
     date: '2025-05-03',
+    rival_goals: 3,
+    self_team_goals: 6,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 20,
@@ -567,6 +707,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2025-04-28',
+    rival_goals: 2,
+    self_team_goals: 7,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 19,
@@ -578,6 +722,10 @@ const matches: Match[] = [
     assists: 2,
     match_mvp: false,
     date: '2025-04-26',
+    rival_goals: 1,
+    self_team_goals: 9,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 18,
@@ -589,6 +737,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2025-04-21',
+    rival_goals: 9,
+    self_team_goals: 7,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 17,
@@ -600,6 +752,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2025-04-14',
+    rival_goals: 3,
+    self_team_goals: 8,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 16,
@@ -611,6 +767,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2025-04-07',
+    rival_goals: 3,
+    self_team_goals: 6,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 15,
@@ -622,6 +782,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2025-03-31',
+    rival_goals: 1,
+    self_team_goals: 3,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 14,
@@ -633,6 +797,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2025-03-29',
+    rival_goals: 3,
+    self_team_goals: 4,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 13,
@@ -644,6 +812,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2025-01-12',
+    rival_goals: 2,
+    self_team_goals: 6,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 12,
@@ -655,6 +827,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2025-01-10',
+    rival_goals: 1,
+    self_team_goals: 3,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 11,
@@ -666,6 +842,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: true,
     date: '2025-01-09',
+    rival_goals: 4,
+    self_team_goals: 12,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 10,
@@ -677,6 +857,10 @@ const matches: Match[] = [
     assists: 2,
     match_mvp: true,
     date: '2025-01-04',
+    rival_goals: 2,
+    self_team_goals: 9,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 9,
@@ -688,6 +872,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: true,
     date: '2025-01-02',
+    rival_goals: 4,
+    self_team_goals: 7,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 8,
@@ -699,6 +887,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: true,
     date: '2024-09-22',
+    rival_goals: 1,
+    self_team_goals: 2,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 7,
@@ -710,6 +902,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2024-09-15',
+    rival_goals: 6,
+    self_team_goals: 5,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 6,
@@ -721,6 +917,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: true,
     date: '2024-06-09',
+    rival_goals: 5,
+    self_team_goals: 3,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 5,
@@ -732,6 +932,10 @@ const matches: Match[] = [
     assists: 2,
     match_mvp: true,
     date: '2024-06-09',
+    rival_goals: 3,
+    self_team_goals: 6,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 4,
@@ -743,6 +947,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: true,
     date: '2024-06-06',
+    rival_goals: 3,
+    self_team_goals: 5,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 3,
@@ -754,6 +962,10 @@ const matches: Match[] = [
     assists: 0,
     match_mvp: false,
     date: '2024-06-04',
+    rival_goals: 3,
+    self_team_goals: 4,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 2,
@@ -765,6 +977,10 @@ const matches: Match[] = [
     assists: 1,
     match_mvp: true,
     date: '2024-05-31',
+    rival_goals: 2,
+    self_team_goals: 5,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
   {
     id: 1,
@@ -776,6 +992,10 @@ const matches: Match[] = [
     assists: 3,
     match_mvp: true,
     date: '2024-05-26',
+    rival_goals: 0,
+    self_team_goals: 4,
+    rival_shootout_goals: 0,
+    self_team_shootout_goals: 0
   },
 ];
 

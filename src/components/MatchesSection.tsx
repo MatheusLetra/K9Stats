@@ -14,23 +14,20 @@ export const MatchesSection: React.FC<Props> = ({
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Mapeia os times pelo ID para consulta rápida
   const teamsMap = useMemo(() => {
     return new Map<number, Team>(teams.map((t) => [t.id, t]));
   }, [teams]);
 
-  // Ordena do mais recente (maior ID) para o mais antigo e vincula os dados dos times
   const formattedMatches = useMemo<FormattedMatch[]>(() => {
-  // Cópia rasa + inversão direta da ordem do array
-  return [...matches]
-    .map((match) => ({
-      ...match,
-      selfTeamData: teamsMap.get(match.self_team),
-      rivalTeamData: teamsMap.get(match.rival_id),
-    }));
-}, [matches, teamsMap]);
+    return [...matches]
+      .sort((a, b) => b.id - a.id)
+      .map((match) => ({
+        ...match,
+        selfTeamData: teamsMap.get(match.self_team),
+        rivalTeamData: teamsMap.get(match.rival_id),
+      }));
+  }, [matches, teamsMap]);
 
-  // Cálculos de paginação
   const totalPages = Math.ceil(formattedMatches.length / itemsPerPage);
   const currentMatches = useMemo(() => {
     const start = (currentPage - 1) * itemsPerPage;
@@ -58,54 +55,83 @@ export const MatchesSection: React.FC<Props> = ({
       </div>
 
       <div className="matches-grid">
-        {currentMatches.map((match) => (
-          <div key={match.id} className="match-card">
-            <div className="match-header">
-              <span className="match-id">Match #{match.id}</span>
-              {match.match_mvp && <span className="mvp-badge">MVP</span>}
+        {currentMatches.map((match) => {
+          const hasShootout =
+            (match.self_team_shootout_goals ?? 0) > 0 ||
+            (match.rival_shootout_goals ?? 0) > 0;
+
+          return (
+            <div key={match.id} className="match-card">
+              <div className="match-header">
+                <span className="match-id">Match #{match.id} · {match.date}</span>
+                <div className="match-badges">
+                  {match.match_mvp && <span className="mvp-badge">MVP</span>}
+                </div>
+              </div>
+
+              {/* Placar e Confronto Directo */}
+              <div className="match-scoreboard">
+                {/* Meu Time */}
+                <div className="team-info self">
+                  <img
+                    src={match.selfTeamData?.logo}
+                    alt={match.selfTeamData?.name}
+                    className="team-logo"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                  />
+                  <span className="team-name">{match.selfTeamData?.name}</span>
+                </div>
+
+                {/* Placar */}
+                <div className="score-display">
+                  <div className="score-main">
+                    <span className="score-num">{match.self_team_goals}</span>
+                    <span className="score-divider">-</span>
+                    <span className="score-num">{match.rival_goals}</span>
+                  </div>
+                  {hasShootout && (
+                    <div className="shootout-info">
+                      ({match.self_team_shootout_goals} X {match.rival_shootout_goals})
+                    </div>
+                  )}
+                </div>
+
+                {/* Time Rival */}
+                <div className="team-info rival">
+                  <img
+                    src={match.rivalTeamData?.logo}
+                    alt={match.rivalTeamData?.name}
+                    className="team-logo"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                  />
+                  <span className="team-name">{match.rivalTeamData?.name}</span>
+                </div>
+              </div>
+
+              {/* Desempenho do Kelvin */}
+              <div className="match-stats">
+                <div className="stat-box">
+                  <span className="stat-value">{match.goals}</span>
+                  <span className="stat-label">Gols</span>
+                </div>
+                {match.double_goals !== undefined && (
+                  <div className="stat-box">
+                    <span className="stat-value">{match.double_goals}</span>
+                    <span className="stat-label">Gol Duplo</span>
+                  </div>
+                )}
+                <div className="stat-box">
+                  <span className="stat-value">{match.assists}</span>
+                  <span className="stat-label">Assists</span>
+                </div>
+              </div>
             </div>
-
-            <div className="match-teams">
-              {/* Meu Time */}
-              <div className="team-info self">
-                <img
-                  src={match.selfTeamData?.logo}
-                  alt={match.selfTeamData?.name}
-                  className="team-logo"
-                  loading="lazy"
-                />
-                <span className="team-name">{match.selfTeamData?.name}</span>
-              </div>
-
-              <div className="match-vs">VS</div>
-
-              {/* Time Rival */}
-              <div className="team-info rival">
-                <img
-                  src={match.rivalTeamData?.logo}
-                  alt={match.rivalTeamData?.name}
-                  className="team-logo"
-                  loading="lazy"
-                />
-                <span className="team-name">{match.rivalTeamData?.name}</span>
-              </div>
-            </div>
-
-            <div className="match-stats">
-              <div className="stat-box">
-                <span className="stat-value">{match.goals}</span>
-                <span className="stat-label">Gols</span>
-              </div>
-              <div className="stat-box">
-                <span className="stat-value">{match.assists}</span>
-                <span className="stat-label">Assists</span>
-              </div>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
-      {/* Controles de Paginação */}
       {totalPages > 1 && (
         <div className="pagination">
           <button

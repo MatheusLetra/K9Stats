@@ -50,7 +50,11 @@ export interface Match {
   double_goals: number;
   assists: number;
   match_mvp: boolean;
-  date: string
+  date: string;
+  rival_goals: number;
+  self_team_goals: number;
+  rival_shootout_goals: number;
+  self_team_shootout_goals: number;
 }
 
 export interface Competition {
