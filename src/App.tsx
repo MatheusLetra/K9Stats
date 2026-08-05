@@ -123,7 +123,7 @@ export const App: React.FC = () => {
 
       <MatchesSection matches={matches} teams={teams} itemsPerPage={10} />
 
-      <TopVictimsSection matches={matches} teams={teams} limit={5} />
+      <TopVictimsSection matches={matches} teams={teams} limit={10} />
 
       <VideosSection videos={videosData} />
 
