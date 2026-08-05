@@ -593,6 +593,17 @@ const matches: Match[] = [
   {
     id: 16,
     competition_id: 4,
+    rival_id: 4, // Desimpain 
+    self_team: 1, // G3X
+    goals: 0,
+    double_goals: 0,
+    assists: 0,
+    match_mvp: false,
+    date: '2025-04-14',
+  },
+  {
+    id: 16,
+    competition_id: 4,
     rival_id: 13, // Funkbol Clube
     self_team: 1, // G3X
     goals: 1,
