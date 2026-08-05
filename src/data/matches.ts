@@ -173,7 +173,7 @@ const teams: Team[] = [
 
 const matches: Match[] = [
   {
-    id: 54,
+    id: 55,
     competition_id: 8,
     rival_id: 2, // Alpak FC
     self_team: 1, // G3X
@@ -184,7 +184,7 @@ const matches: Match[] = [
     date: '2026-08-01',
   },
   {
-    id: 53,
+    id: 54,
     competition_id: 8,
     rival_id: 3, // Ultimate Móstoles
     self_team: 1, // G3X
@@ -195,7 +195,7 @@ const matches: Match[] = [
     date: '2026-08-01',
   },
   {
-    id: 52,
+    id: 53,
     competition_id: 8,
     rival_id: 4, // DesimpaiN
     self_team: 1, // G3X
@@ -206,7 +206,7 @@ const matches: Match[] = [
     date: '2026-07-31',
   },
   {
-    id: 51,
+    id: 52,
     competition_id: 8,
     rival_id: 2, // Alpak FC
     self_team: 1, // G3X
@@ -217,7 +217,7 @@ const matches: Match[] = [
     date: '2026-07-28',
   },
   {
-    id: 50,
+    id: 51,
     competition_id: 8,
     rival_id: 5, // Karasu
     self_team: 1, // G3X
@@ -228,7 +228,7 @@ const matches: Match[] = [
     date: '2026-07-27',
   },
   {
-    id: 49,
+    id: 50,
     competition_id: 7,
     rival_id: 4, // DesimpaiN
     self_team: 1, // G3X
@@ -239,7 +239,7 @@ const matches: Match[] = [
     date: '2026-05-18',
   },
   {
-    id: 48,
+    id: 49,
     competition_id: 7,
     rival_id: 6, // Fluxo
     self_team: 1, // G3X
@@ -250,7 +250,7 @@ const matches: Match[] = [
     date: '2026-05-15',
   },
   {
-    id: 47,
+    id: 48,
     competition_id: 7,
     rival_id: 7, // Capim FC
     self_team: 1, // G3X
@@ -261,7 +261,7 @@ const matches: Match[] = [
     date: '2026-05-11',
   },
   {
-    id: 46,
+    id: 47,
     competition_id: 7,
     rival_id: 6, // Fluxo
     self_team: 1, // G3X
@@ -272,7 +272,7 @@ const matches: Match[] = [
     date: '2026-05-04',
   },
   {
-    id: 45,
+    id: 46,
     competition_id: 7,
     rival_id: 8, // Dendele FC
     self_team: 1, // G3X
@@ -283,7 +283,7 @@ const matches: Match[] = [
     date: '2026-04-27',
   },
   {
-    id: 44,
+    id: 45,
     competition_id: 7,
     rival_id: 9, // Nyvelados FC
     self_team: 1, // G3X
@@ -294,7 +294,7 @@ const matches: Match[] = [
     date: '2026-04-20',
   },
   {
-    id: 43,
+    id: 44,
     competition_id: 7,
     rival_id: 4, // DesimpaiN
     self_team: 1, // G3X
@@ -305,7 +305,7 @@ const matches: Match[] = [
     date: '2026-04-13',
   },
   {
-    id: 42,
+    id: 43,
     competition_id: 7,
     rival_id: 10, // Loud SC
     self_team: 1, // G3X
@@ -316,7 +316,7 @@ const matches: Match[] = [
     date: '2026-04-06',
   },
   {
-    id: 41,
+    id: 42,
     competition_id: 7,
     rival_id: 11, // Furia FC
     self_team: 1, // G3X
@@ -327,7 +327,7 @@ const matches: Match[] = [
     date: '2026-03-30',
   },
   {
-    id: 40,
+    id: 41,
     competition_id: 7,
     rival_id: 12, // Dibrados FC
     self_team: 1, // G3X
@@ -338,7 +338,7 @@ const matches: Match[] = [
     date: '2026-03-23',
   },
   {
-    id: 39,
+    id: 40,
     competition_id: 7,
     rival_id: 13, // Funkbol Clube
     self_team: 1, // G3X
@@ -349,7 +349,7 @@ const matches: Match[] = [
     date: '2026-03-16',
   },
   {
-    id: 38,
+    id: 39,
     competition_id: 7,
     rival_id: 7, // Capim FC
     self_team: 1, // G3X
@@ -360,7 +360,7 @@ const matches: Match[] = [
     date: '2026-03-09',
   },
   {
-    id: 37,
+    id: 38,
     competition_id: 5,
     rival_id: 14, // Chile KWC
     self_team: 17, // Brazil KWC
@@ -371,7 +371,7 @@ const matches: Match[] = [
     date: '2026-01-17',
   },
   {
-    id: 36,
+    id: 37,
     competition_id: 5,
     rival_id: 15, // Mexico KWC
     self_team: 17, // Brazil KWC
@@ -382,7 +382,7 @@ const matches: Match[] = [
     date: '2026-01-15',
   },
   {
-    id: 35,
+    id: 36,
     competition_id: 5,
     rival_id: 16, // Italy KWC
     self_team: 17, // Brazil KWC
@@ -393,7 +393,7 @@ const matches: Match[] = [
     date: '2026-01-13',
   },
   {
-    id: 34,
+    id: 35,
     competition_id: 5,
     rival_id: 22, // Saudi Arabia KWC
     self_team: 17, // Brazil KWC
@@ -404,7 +404,7 @@ const matches: Match[] = [
     date: '2026-01-12',
   },
   {
-    id: 33,
+    id: 34,
     competition_id: 5,
     rival_id: 21, // Peru KWC
     self_team: 17, // Brazil KWC
@@ -415,7 +415,7 @@ const matches: Match[] = [
     date: '2026-01-11',
   },
   {
-    id: 32,
+    id: 33,
     competition_id: 5,
     rival_id: 20, // Qatar KWC
     self_team: 17, // Brazil KWC
@@ -426,7 +426,7 @@ const matches: Match[] = [
     date: '2026-01-08',
   },
   {
-    id: 31,
+    id: 32,
     competition_id: 5,
     rival_id: 19, // Spain KWC
     self_team: 17, // Brazil KWC
@@ -437,7 +437,7 @@ const matches: Match[] = [
     date: '2026-01-03',
   },
   {
-    id: 30,
+    id: 31,
     competition_id: 6,
     rival_id: 11, // Furia FC
     self_team: 1, // G3X
@@ -448,7 +448,7 @@ const matches: Match[] = [
     date: '2025-11-14',
   },
   {
-    id: 29,
+    id: 30,
     competition_id: 6,
     rival_id: 13, // Funkbol Clube
     self_team: 1, // G3X
@@ -459,7 +459,7 @@ const matches: Match[] = [
     date: '2025-11-14',
   },
   {
-    id: 28,
+    id: 29,
     competition_id: 6,
     rival_id: 8, // Dendele FC
     self_team: 1, // G3X
@@ -470,7 +470,7 @@ const matches: Match[] = [
     date: '2025-11-10',
   },
   {
-    id: 27,
+    id: 28,
     competition_id: 6,
     rival_id: 11, // Furia FC
     self_team: 1, // G3X
@@ -481,7 +481,7 @@ const matches: Match[] = [
     date: '2025-11-03',
   },
   {
-    id: 26,
+    id: 27,
     competition_id: 6,
     rival_id: 4, // DesimpaiN
     self_team: 1, // G3X
@@ -492,7 +492,7 @@ const matches: Match[] = [
     date: '2025-10-27',
   },
   {
-    id: 25,
+    id: 26,
     competition_id: 6,
     rival_id: 18, // FC Real Elite
     self_team: 1, // G3X
@@ -503,7 +503,7 @@ const matches: Match[] = [
     date: '2025-10-24',
   },
   {
-    id: 24,
+    id: 25,
     competition_id: 6,
     rival_id: 10, // Loud SC
     self_team: 1, // G3X
@@ -514,7 +514,7 @@ const matches: Match[] = [
     date: '2025-10-20',
   },
   {
-    id: 23,
+    id: 24,
     competition_id: 6,
     rival_id: 7, // Capim FC
     self_team: 1, // G3X
@@ -525,7 +525,7 @@ const matches: Match[] = [
     date: '2025-10-17',
   },
   {
-    id: 22,
+    id: 23,
     competition_id: 4,
     rival_id: 8, // Dendele FC
     self_team: 1, // G3X
@@ -536,7 +536,7 @@ const matches: Match[] = [
     date: '2025-05-09',
   },
   {
-    id: 21,
+    id: 22,
     competition_id: 4,
     rival_id: 9, // Nyvelados FC
     self_team: 1, // G3X
@@ -547,7 +547,7 @@ const matches: Match[] = [
     date: '2025-05-05',
   },
   {
-    id: 20,
+    id: 21,
     competition_id: 4,
     rival_id: 6, // Fluxo
     self_team: 1, // G3X
@@ -558,7 +558,7 @@ const matches: Match[] = [
     date: '2025-05-03',
   },
   {
-    id: 19,
+    id: 20,
     competition_id: 4,
     rival_id: 10, // Loud SC
     self_team: 1, // G3X
@@ -569,7 +569,7 @@ const matches: Match[] = [
     date: '2025-04-28',
   },
   {
-    id: 18,
+    id: 19,
     competition_id: 4,
     rival_id: 8, // Dendele FC
     self_team: 1, // G3X
@@ -580,7 +580,7 @@ const matches: Match[] = [
     date: '2025-04-26',
   },
   {
-    id: 17,
+    id: 18,
     competition_id: 4,
     rival_id: 11, // Furia FC
     self_team: 1, // G3X
@@ -591,7 +591,7 @@ const matches: Match[] = [
     date: '2025-04-21',
   },
   {
-    id: 16,
+    id: 17,
     competition_id: 4,
     rival_id: 4, // Desimpain 
     self_team: 1, // G3X
