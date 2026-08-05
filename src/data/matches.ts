@@ -202,7 +202,7 @@ const matches: Match[] = [
     goals: 2,
     double_goals: 0,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-07-31',
   },
   {
@@ -213,7 +213,7 @@ const matches: Match[] = [
     goals: 2,
     double_goals: 0,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-07-28',
   },
   {
@@ -246,7 +246,7 @@ const matches: Match[] = [
     goals: 1,
     double_goals: 1,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-05-15',
   },
   {
@@ -257,7 +257,7 @@ const matches: Match[] = [
     goals: 4,
     double_goals: 0,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-05-11',
   },
   {
@@ -268,7 +268,7 @@ const matches: Match[] = [
     goals: 3,
     double_goals: 1,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-05-04',
   },
   {
@@ -279,7 +279,7 @@ const matches: Match[] = [
     goals: 1,
     double_goals: 0,
     assists: 1,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-04-27',
   },
   {
@@ -301,7 +301,7 @@ const matches: Match[] = [
     goals: 1,
     double_goals: 0,
     assists: 2,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-04-13',
   },
   {
@@ -323,7 +323,7 @@ const matches: Match[] = [
     goals: 5,
     double_goals: 1,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-03-30',
   },
   {
@@ -334,7 +334,7 @@ const matches: Match[] = [
     goals: 6,
     double_goals: 0,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-03-23',
   },
   {
@@ -356,7 +356,7 @@ const matches: Match[] = [
     goals: 6,
     double_goals: 1,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-03-09',
   },
   {
@@ -389,7 +389,7 @@ const matches: Match[] = [
     goals: 3,
     double_goals: 1,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-01-13',
   },
   {
@@ -400,7 +400,7 @@ const matches: Match[] = [
     goals: 1,
     double_goals: 0,
     assists: 1,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-01-12',
   },
   {
@@ -411,7 +411,7 @@ const matches: Match[] = [
     goals: 1,
     double_goals: 0,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-01-11',
   },
   {
@@ -422,7 +422,7 @@ const matches: Match[] = [
     goals: 3,
     double_goals: 1,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2026-01-08',
   },
   {
@@ -444,7 +444,7 @@ const matches: Match[] = [
     goals: 2,
     double_goals: 0,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2025-11-14',
   },
   {
@@ -455,7 +455,7 @@ const matches: Match[] = [
     goals: 2,
     double_goals: 0,
     assists: 1,
-    match_mvp: false,
+    match_mvp: true,
     date: '2025-11-14',
   },
   {
@@ -466,7 +466,7 @@ const matches: Match[] = [
     goals: 3,
     double_goals: 0,
     assists: 1,
-    match_mvp: false,
+    match_mvp: true,
     date: '2025-11-10',
   },
   {
@@ -477,7 +477,7 @@ const matches: Match[] = [
     goals: 3,
     double_goals: 0,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2025-11-03',
   },
   {
@@ -488,7 +488,7 @@ const matches: Match[] = [
     goals: 3,
     double_goals: 1,
     assists: 2,
-    match_mvp: false,
+    match_mvp: true,
     date: '2025-10-27',
   },
   {
@@ -499,7 +499,7 @@ const matches: Match[] = [
     goals: 3,
     double_goals: 1,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2025-10-24',
   },
   {
@@ -521,7 +521,7 @@ const matches: Match[] = [
     goals: 2,
     double_goals: 0,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2025-10-17',
   },
   {
@@ -543,7 +543,7 @@ const matches: Match[] = [
     goals: 3,
     double_goals: 0,
     assists: 0,
-    match_mvp: false,
+    match_mvp: true,
     date: '2025-05-05',
   },
   {
@@ -554,7 +554,7 @@ const matches: Match[] = [
     goals: 3,
     double_goals: 0,
     assists: 1,
-    match_mvp: false,
+    match_mvp: true,
     date: '2025-05-03',
   },
   {
