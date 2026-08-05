@@ -1,15 +1,15 @@
 import React from 'react';
-import type { Competition } from '../types';
+import type { CompetitionSummary } from '../types';
 import { KpiCard } from './KpiCard';
 
 interface Props {
-  data: Competition[];
+  data: CompetitionSummary[];
   totalJogos: number;
   totalGols: number;
   totalAssistencias: number;
   totalMvp: number;
   mediaGeral: number;
-  compMelhorMedia: Competition;
+  compMelhorMedia: CompetitionSummary;
 }
 
 export const KpiSection: React.FC<Props> = ({

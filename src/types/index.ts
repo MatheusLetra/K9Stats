@@ -1,14 +1,12 @@
-export interface RawCompetition {
+export interface CompetitionSummary {
+  id: number;
   name: string;
-  team: 'G3X' | 'BRASIL' | 'PORCINOS';
   jogos: number;
   gols: number;
   assistencias: number;
   mvp: number;
-}
-
-export interface Competition extends RawCompetition {
   media: number;
+  team: string;
 }
 
 export type TitleResultado = 'campeao' | 'mvp' | 'artilheiro' | 'vice';
@@ -45,12 +43,19 @@ export interface Team {
 
 export interface Match {
   id: number;
+  competition_id: number;
   rival_id: number;
   self_team: number;
   goals: number;
+  double_goals: number;
   assists: number;
   match_mvp: boolean;
-  date: string;
+  date: string
+}
+
+export interface Competition {
+  id: number;
+  name: string;
 }
 
 export interface FormattedMatch extends Match {

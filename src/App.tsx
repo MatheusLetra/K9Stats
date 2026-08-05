@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { competitionsData, timelineData, titulosData, videosData } from './data/statistics';
+import { timelineData, titulosData, videosData } from './data/statistics';
 import { HeroSection } from './components/HeroSection';
 import { TitlesSection } from './components/TitlesSection';
 import { KpiSection } from './components/KpiSection';
@@ -10,33 +10,68 @@ import { TimelineSection } from './components/TimelineSection';
 import { VideosSection } from './components/VideosSection';
 import { Navbar } from './components/NavBar';
 import { MatchesSection } from './components/MatchesSection';
-import { matches, teams } from './data/matches';
+
+// Importe as competições, partidas e times do seu novo arquivo de matches
+import { matches, teams, competitions } from './data/matches'; 
+import type { CompetitionSummary } from './types';
 
 export const App: React.FC = () => {
   const stats = useMemo(() => {
-    const totalJogos = competitionsData.reduce((acc, curr) => acc + curr.jogos, 0);
-    const totalGols = competitionsData.reduce((acc, curr) => acc + curr.gols, 0);
-    const totalAssistencias = competitionsData.reduce((acc, curr) => acc + curr.assistencias, 0);
-    const totalMvp = competitionsData.reduce((acc, curr) => acc + curr.mvp, 0);
+    // 1. Agrupa os jogos por competição para recriar o array dinâmico de competições
+    const competitionsData: CompetitionSummary[] = competitions.map((comp) => {
+      const compMatches = matches.filter((m) => m.competition_id === comp.id);
+      
+      const jogos = compMatches.length;
+      const gols = compMatches.reduce((acc, m) => acc + m.goals, 0);
+      const assistencias = compMatches.reduce((acc, m) => acc + m.assists, 0);
+      const mvp = compMatches.reduce((acc, m) => acc + (m.match_mvp ? 1 : 0), 0);
+      const media = jogos > 0 ? Number((gols / jogos).toFixed(2)) : 0;
+      
+      // Identifica o time com base no primeiro jogo da competição (ex: G3X, Brazil KWC, Porcinos)
+      const selfTeamId = compMatches[0]?.self_team;
+      const team = teams.find((t) => t.id === selfTeamId)?.name || 'G3X';
+
+      return {
+        id: comp.id,
+        name: comp.name,
+        jogos,
+        gols,
+        assistencias,
+        mvp,
+        media,
+        team,
+      };
+    }).filter((comp) => comp.jogos > 0); // Mantém apenas competições com jogos registrados
+
+    // 2. Totais Gerais
+    const totalJogos = matches.length;
+    const totalGols = matches.reduce((acc, m) => acc + m.goals, 0);
+    const totalAssistencias = matches.reduce((acc, m) => acc + m.assists, 0);
+    const totalMvp = matches.reduce((acc, m) => acc + (m.match_mvp ? 1 : 0), 0);
     const mediaGeral = totalJogos > 0 ? totalGols / totalJogos : 0;
 
+    // 3. Competição com melhor média
     const compMelhorMedia = competitionsData.reduce(
       (max, item) => (item.media > max.media ? item : max),
-      competitionsData[0]
+      competitionsData[0] || { media: 0 }
     );
-    const g3xData = competitionsData.filter(d => d.team === 'G3X');
-    const g3xJogos = g3xData.reduce((acc, curr) => acc + curr.jogos, 0);
-    const g3xGols = g3xData.reduce((acc, curr) => acc + curr.gols, 0);
+
+    // 4. Totais específicos do G3X (Team ID 1)
+    const g3xMatches = matches.filter((m) => m.self_team === 1);
+    const g3xJogos = g3xMatches.length;
+    const g3xGols = g3xMatches.reduce((acc, m) => acc + m.goals, 0);
     const g3xMedia = g3xJogos > 0 ? g3xGols / g3xJogos : 0;
 
+    // 5. Pico de produção e Máximo de Gols
     const picoProducao = competitionsData.reduce(
       (max, item) => (item.gols > max.gols ? item : max),
-      competitionsData[0]
+      competitionsData[0] || { gols: 0 }
     );
 
-    const maxGols = Math.max(...competitionsData.map(d => d.gols));
+    const maxGols = Math.max(...competitionsData.map((d) => d.gols), 0);
 
     return {
+      competitionsData,
       totalJogos,
       totalGols,
       totalAssistencias,
@@ -47,7 +82,7 @@ export const App: React.FC = () => {
       g3xGols,
       g3xMedia,
       picoProducao,
-      maxGols
+      maxGols,
     };
   }, []);
 
@@ -62,7 +97,7 @@ export const App: React.FC = () => {
       <TitlesSection titulos={titulosData} />
       <TimelineSection events={timelineData} />
       <KpiSection
-        data={competitionsData}
+        data={stats.competitionsData}
         totalJogos={stats.totalJogos}
         totalGols={stats.totalGols}
         totalAssistencias={stats.totalAssistencias}
@@ -70,9 +105,9 @@ export const App: React.FC = () => {
         mediaGeral={stats.mediaGeral}
         compMelhorMedia={stats.compMelhorMedia}
       />
-      <CompetitionList competitions={competitionsData} maxGols={stats.maxGols} />
+      <CompetitionList competitions={stats.competitionsData} maxGols={stats.maxGols} />
       <BarChart
-        data={competitionsData}
+        data={stats.competitionsData}
         maxGols={stats.maxGols}
         picoProducao={stats.picoProducao}
       />
