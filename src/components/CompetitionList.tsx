@@ -1,9 +1,9 @@
 import React from 'react';
-import type { Competition } from '../types';
+import type { CompetitionSummary } from '../types';
 import { formatDecimal, getTeamClass } from '../utils/formatters';
 
 interface Props {
-  competitions: Competition[];
+  competitions: CompetitionSummary[];
   maxGols: number;
 }
 

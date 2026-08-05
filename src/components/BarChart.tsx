@@ -1,10 +1,10 @@
 import React from 'react';
-import type { Competition } from '../types';
+import type { CompetitionSummary } from '../types';
 
 interface Props {
-  data: Competition[];
+  data: CompetitionSummary[];
   maxGols: number;
-  picoProducao: Competition;
+  picoProducao: CompetitionSummary;
 }
 
 export const BarChart: React.FC<Props> = ({ data, maxGols, picoProducao }) => {
