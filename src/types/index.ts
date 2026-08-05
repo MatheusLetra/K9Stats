@@ -3,10 +3,17 @@ export interface CompetitionSummary {
   name: string;
   jogos: number;
   gols: number;
+  doubleGoals: number;
   assistencias: number;
   mvp: number;
   media: number;
   team: string;
+  vitorias: number;
+  derrotas: number;
+  vitoriasShootout: number;
+  derrotasShootout: number;
+  teamTotalGols: number;
+  percentualGolsEquipe: number;
 }
 
 export type TitleResultado = 'campeao' | 'mvp' | 'artilheiro' | 'vice';
