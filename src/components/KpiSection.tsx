@@ -37,7 +37,7 @@ export const KpiSection: React.FC<Props> = ({
         <KpiCard 
           label="Jogos" 
           target={totalJogos} 
-          foot={`em ${data.length} competições`} 
+          foot={`em ${data.length} competições (inclui partidas em que foi cobrado Pênalti Presidente)`} 
         />
         <KpiCard 
           label="Gols" 
