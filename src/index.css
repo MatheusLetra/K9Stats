@@ -1302,3 +1302,118 @@ footer p {
 .page-info strong {
   color: var(--paper);
 }
+
+/* ================= TOP VICTIMS SECTION ================= */
+.victims-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.victim-card {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 24px;
+  display: grid;
+  grid-template-columns: 40px 1.5fr 1fr;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  gap: 16px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.victim-card:hover {
+  border-color: rgba(255, 210, 26, 0.4);
+  transform: translateX(4px);
+}
+
+.victim-rank {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  color: var(--gold);
+  opacity: 0.9;
+}
+
+.victim-team-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.victim-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.victim-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--paper);
+  margin: 0;
+}
+
+.victim-games {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--paper-dim);
+}
+
+.victim-stats {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.stat-pill {
+  text-align: right;
+}
+
+.stat-num {
+  display: block;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  color: var(--paper);
+  line-height: 1;
+}
+
+.stat-lbl {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--paper-dim);
+  text-transform: uppercase;
+}
+
+.victim-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--gold);
+  transition: width 0.4s ease;
+}
+
+@media (max-width: 640px) {
+  .victim-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .victim-stats {
+    justify-content: space-between;
+  }
+
+  .stat-pill {
+    text-align: left;
+  }
+}

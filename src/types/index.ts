@@ -62,3 +62,12 @@ export interface FormattedMatch extends Match {
   selfTeamData?: Team;
   rivalTeamData?: Team;
 }
+
+export interface RivalStat {
+  team: Team;
+  jogos: number;
+  gols: number;
+  assistencias: number;
+  mvps: number;
+  mediaGols: number;
+}

@@ -6,12 +6,9 @@ export const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Títulos', href: '#titulos' },
     { name: 'Trajetória', href: '#timeline' },
-    { name: 'Estatísticas', href: '#kpis' },
-    { name: 'Torneios', href: '#competicoes' },
-    { name: 'Gráfico', href: '#grafico' },
-    { name: 'Geral vs G3X', href: '#totais' },
+    { name: 'Estatísticas Gerais', href: '#kpis' },
     { name: 'Todos os Jogos', href: '#jogos' },
-    { name: 'Vídeos', href: '#videos' },
+    { name: 'Maiores Vítimas', href: '#vitimas' },
   ];
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {

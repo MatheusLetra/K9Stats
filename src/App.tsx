@@ -14,6 +14,7 @@ import { MatchesSection } from './components/MatchesSection';
 // Importe as competições, partidas e times do seu novo arquivo de matches
 import { matches, teams, competitions } from './data/matches'; 
 import type { CompetitionSummary } from './types';
+import { TopVictimsSection } from './components/TopVictimsSection';
 
 export const App: React.FC = () => {
   const stats = useMemo(() => {
@@ -122,6 +123,8 @@ export const App: React.FC = () => {
 
       <MatchesSection matches={matches} teams={teams} itemsPerPage={10} />
 
+      <TopVictimsSection matches={matches} teams={teams} limit={5} />
+
       <VideosSection videos={videosData} />
 
       <footer>
@@ -129,6 +132,7 @@ export const App: React.FC = () => {
           K<span className="k9">9</span> · KELVIN OLIVEIRA
         </div>
         <p>Dados de competições da Kings League &amp; Kings World Cup Nations</p>
+        <p>Desenvolvido por @matheus_letra</p>
       </footer>
     </>
   );
