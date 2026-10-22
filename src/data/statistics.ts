@@ -78,8 +78,8 @@ export const timelineData: TimelineEvent[] = [
     year: "2026/27",
     title: "Kings Cup Brasil",
     team: "G3X",
-    description: "Próxima competição.",
-    tag: "Em breve",
+    description: "Cirurgia no Quadril",
+    tag: "Não disputou",
     winTrophy: false
   }
 ];
